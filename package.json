@@ -18,5 +18,8 @@
   "homepage": "https://github.com/olliahonen/promise-either#readme",
   "dependencies": {
     "fp-ts": "^1.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.9.2"
   }
 }
