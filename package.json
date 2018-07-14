@@ -1,0 +1,22 @@
+{
+  "name": "promise-either",
+  "version": "1.0.0",
+  "description": "PromiseEither instead of Promise<Either>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olliahonen/promise-either.git"
+  },
+  "author": "Olli Ahonen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olliahonen/promise-either/issues"
+  },
+  "homepage": "https://github.com/olliahonen/promise-either#readme",
+  "dependencies": {
+    "fp-ts": "^1.7.1"
+  }
+}
