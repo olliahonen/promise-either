@@ -8,4 +8,13 @@ export class PromiseEither<L, A> {
     return new PromiseEither(Promise.resolve(e))
   }
 
+  /**
+   * Do `f` if this Promise is fulfilled, otherwise do nothing
+   */
+  public map<B>(f: (a: A) => B): PromiseEither<L, B> {
+    return new PromiseEither<L, B>(
+      this.value.then(e => e.map(a => f(a)))
+    )
+  }
+
 }
