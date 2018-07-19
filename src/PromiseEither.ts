@@ -30,4 +30,14 @@ export class PromiseEither<L, A> {
     )
   }
 
+  /**
+   * Do side effect `s` if this Promise is fulfilled and this Either is a Right,
+   * otherwise do nothing
+   */
+  public tap(s: (a: A) => void): PromiseEither<L, A> {
+    this.value
+      .then(e => e.map(a => s(a)))
+    return new PromiseEither(this.value)
+  }
+
 }
